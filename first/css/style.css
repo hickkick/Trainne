@@ -167,3 +167,108 @@ a {
     width: 140px;
     text-align: right;
 }
+
+.price {
+    padding: 150px 0 180px;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    font-family: 'Roboto' , sans-serif;
+    color: #2f3f54;
+}
+.title span {
+    color: #2c7de8;  
+}
+.price__descr {
+    max-width: 594px;
+    margin: 35px auto 125px;
+    text-align: center;
+}
+.price__items {
+    display: flex;
+    justify-content: space-between;
+}
+.price-item {
+    position: relative;
+    overflow: hidden;
+    max-width: 360px;
+    padding: 0 50px 60px;
+    box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+}
+.price-item__number {
+    position: absolute;
+    top: -370px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 40px;
+    width: 265px;
+    height: 465px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 33px;
+    border-radius: 136px;
+    color: #fff;
+    background-color: #2c7de8;
+}
+.price-item__number span {
+    font-size: 16px; 
+}
+.price-item__images {
+    padding-top: 120px;
+    margin-bottom: 30px;
+    min-height: 251px;
+    text-align: center;
+}
+.price-item__title {
+    margin-bottom: 25px;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #2c7de8;
+}
+.price-item__text {
+    margin-bottom: 50px;
+}
+.price-item__list {
+    margin-bottom: 75px;
+    list-style: none;
+}
+.price-item__list li {
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Roboto' ,serif;
+    font-weight: 400;
+}
+
+.price-item__list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 11px;
+    background-image: url(../images/1.png);
+}
+.price-item__btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 10px;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'Roboto' ,serif;
+    text-align: center;
+    color: #fff;
+    background-color: #2c7de8;
+}
