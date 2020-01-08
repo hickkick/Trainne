@@ -1,0 +1,96 @@
+@media (max-width: 960px) {
+    .selling-points li {
+        width: 40%;
+        padding: 0 5%;
+        margin: 20px 0;
+    }
+    .footer ul {
+        width: 50%;
+    }
+    .footer ul:nth-child(odd) {
+        clear: both;
+    }
+    .quote {
+        width: 90%;
+        padding: 40px 5%;
+    }
+}
+@media (max-width: 768px) {
+    .header .nav {
+        float: none;
+    }
+    .header .nav li {
+        margin-left: 0;
+        width: 16.66%;
+        text-align: center;
+        font-size: 14px;
+    }
+    .header h1.logo {
+        float: none;
+        margin: 0 auto 15px;
+    }
+    .latest-work li {
+        width: 60%;
+        margin: 30px 20% !important;
+        float: none;
+    }
+    .latest-worl h2 {
+        text-align: center;
+    }
+}
+@media (max-width: 480px) {
+    .selling-points li {
+        width: 80%;
+        padding: 0 10%;
+        margin: 20px 0;
+    }
+    .latest-work li {
+        width: 80%;
+        margin: 30px 10% !important;
+    }
+    .quote {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .footer ul {
+        width: 100%;
+        float: none;
+        border-top: 2px solid #333;
+    }
+    .header .nav li {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    .header .nav {
+        background: #555;
+    }
+    .header .wrapper {
+        padding: 0;
+        width: 100%;
+    }
+    .header {
+        padding-bottom: 0;
+    }
+    .header .nav li a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        color: #999;
+        border-top: 1px solid #4f4f4f;
+    }
+    .burger-nav {
+        width: 100%;
+        height: 40px;
+        color: #4e4e4e;
+        background: url('../images/menu.png') no-repeat 98% center;
+        cursor: pointer;
+    }
+    .header .nav ul {
+        height: 0;
+        overflow: hidden;
+    }
+    .header .nav ul.open {
+        height: auto;
+    } 
+}
