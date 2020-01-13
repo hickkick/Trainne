@@ -37,4 +37,6 @@ $(document).ready(function(){      // amazing jQuery ("rip")
     });
 
 
+    new WOW().init();
+
 });

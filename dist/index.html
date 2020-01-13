@@ -38,7 +38,7 @@
       </header>
       <section class="weather">
         <div class="weather__inner">
-          <div class="weather__about">
+          <div class="weather__about wow fadeInLeft">
             <div class="weather__about-title">
               Diffrent kind of weather
               inside of 24/7 hours.
@@ -48,8 +48,8 @@
               business down the certain routes.
             </div>
             <div class="weather__form"> 
-              <div class="weather--tip">
-                 <input class="search" id="search" type="text" autocomplete="off" placeholder="Search Zip, City, Place">
+              <div class="weather--tip wow tada" data-wow-delay="2s">
+                 <input class="search"  id="search" type="text" autocomplete="off" placeholder="Search Zip, City, Place">
                  <input class="btn" type="submit" onclick="alert('кнопка тимчасово не працює! Жміть Enter')" value="Get Update">
               </div>
               <form>
@@ -59,7 +59,7 @@
               </form>
             </div>
           </div>
-          <div class="weather__wiget wiget">
+          <div class="weather__wiget wiget wow fadeInRight">
             <div class="wiget__report">
               <img src="img/cloud.png" alt="">
               <div class="wiget__inner">
@@ -105,7 +105,7 @@
   <section class="about">
     <div class="wrapper">
       <div class="about__inner">
-        <div class="box">
+        <div class="box wow fadeInLeft" data-wow-offset="350" >
           <div class="about__title">
             Get the Comprehensive
             Weather Information.
@@ -120,7 +120,7 @@
             <a class="btn" href="#">More Info</a>
           </div>
         </div>
-        <div class="box">
+        <div class="box fadeInRight" data-wow-offset="350" >
           <div class="about__img">
             <picture>
               <source srcset="img/comp_img_min.png" media="(max-width: 1120px)">
@@ -133,7 +133,7 @@
       </div>
     </div>
   </section>
-  <section class="question">
+  <section class="question wow fadeInDown" data-wow-offset="300">
     <div class="container">
       <div class="question__title">
         Frequently Asked Questions
@@ -214,7 +214,7 @@
       </div>
     </div>
   </section>
-  <section class="partners">
+  <section class="partners wow fadeInDown" data-wow-offset="100">
     <div class="container">
       <div class="partners__inner">
         <div class="partners__item">
