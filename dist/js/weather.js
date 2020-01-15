@@ -9,12 +9,17 @@ const api = {
 
 const searchbox = document.querySelector('.search');
 searchbox.addEventListener('keypress', setQuery);
+const input = document.querySelector('#button');
+input.onclick = setButton;
 
 function setQuery(evt) {
   if (evt.keyCode == 13) {
     getResults(searchbox.value);
     // console.log(searchbox.value);                    for future
   }
+}
+function setButton(){
+  getResults(searchbox.value);
 }
 
 function getResults (query) {
@@ -39,7 +44,7 @@ function displayResults (weather) {
   temp.innerHTML = `${Math.round(weather.main.temp)}<sup>o</sup>`;
 
   let state = document.querySelector('.wiget__temperature p');
-  state.innerHTML = `${weather.weather.main} but i tried`;  // this undefind ( 
+  state.innerHTML = `${weather.weather[0].main}`; 
 
   let ms = document.querySelector('.info__ms span');
   ms.innerHTML = `${weather.wind.speed}`;
@@ -51,7 +56,7 @@ function displayResults (weather) {
   pressure.innerHTML = `${weather.main.pressure}`;
 
   let info = document.querySelector('.info__about p');
-  info.innerHTML = `${weather.weather.description}`; //dont know why this thing not work ( , but i keep it
+  info.innerHTML = `${weather.weather[0].description}`; 
 }
 
 
