@@ -32,6 +32,9 @@ a {
     justify-content: space-between;
     align-items: center;
 }
+.menu__btn {
+    display: none;
+}
 .menu__list {
     display: flex;
 }
@@ -107,6 +110,7 @@ a {
     position: absolute;
     right: 0;
     top: 50%;
+    transform: translateY(-50%);
 }
 .header-dots button {
     margin: 10px auto;
@@ -273,10 +277,9 @@ a {
 .footer__inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 61px;
+    
+    padding: 20px 40px 17px;
     color: #272727;
-    padding: 0 40px;
 }
 .footer__link a + a{
     margin-left: 20px;
