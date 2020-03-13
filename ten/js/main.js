@@ -19,7 +19,23 @@ $(function(){
     });
 
 
-    $('.btn__menu').on('click', function(){
-        $('.menu__list').slideToggle();
+    $('.header__burger').click( function(event) {
+        $('.header__burger,.menu').toggleClass('active');
+        $('body').toggleClass('lock');
     });
 });
+
+// var header = $('.header'),                // this is a real magic (for disepier menu)
+// 	scrollPrev = 0;
+
+//     $(window).scroll(function() {
+//         var scrolled = $(window).scrollTop();
+    
+//         if ( scrolled > 10 && scrolled > scrollPrev ) {
+//             header.addClass('out');
+//             header.addClass('bg');
+//         } else {
+//             header.removeClass('out');
+//         }
+//         scrollPrev = scrolled;
+//     });
