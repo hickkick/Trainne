@@ -23,6 +23,7 @@ $(function(){
         $('.header__burger,.menu').toggleClass('active');
         $('body').toggleClass('lock');
     });
+
 });
 
 // var header = $('.header'),                // this is a real magic (for disepier menu)
@@ -33,9 +34,9 @@ $(function(){
     
 //         if ( scrolled > 10 && scrolled > scrollPrev ) {
 //             header.addClass('out');
-//             header.addClass('bg');
 //         } else {
 //             header.removeClass('out');
+//             header.addClass('bg');
 //         }
 //         scrollPrev = scrolled;
 //     });
