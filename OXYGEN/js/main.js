@@ -1,3 +1,21 @@
+const HEADER_BTN = document.querySelector('.header__content-decore');
+const BURGER = document.querySelector('.burger');
+
+
+HEADER_BTN.addEventListener('click',  function(event) {
+    HEADER_BTN.classList.toggle('pos');
+});
+
+BURGER.addEventListener('click', function(event) {
+    let nav = document.querySelector('.menu'),
+        list = document.querySelector('.menu__list'),
+        body = document.querySelector('body');
+    BURGER.classList.toggle('burger-active');
+    nav.classList.toggle('burger-active');
+    list.classList.toggle('burger-active');
+    body.classList.toggle('lock');
+});
+
 $(function(){
 
     $('.slider').slick ({
@@ -46,19 +64,5 @@ $(function(){
 // outNum(55, 'out-3');
 // outNum(80, 'out-4');
 
-const HEADER_BTN = document.querySelector('.header__content-decore');
-const BURGER = document.querySelector('.burger');
 
-HEADER_BTN.addEventListener('click',  function(event) {
-    HEADER_BTN.classList.toggle('pos');
-});
 
-BURGER.addEventListener('click', function() {
-    let nav = document.querySelector('.menu'),
-        list = document.querySelector('.menu__list'),
-        body = document.querySelector('body');
-    BURGER.classList.toggle('burger-active');
-    nav.classList.toggle('burger-active');
-    list.classList.toggle('burger-active');
-    body.classList.toggle('lock');
-});
