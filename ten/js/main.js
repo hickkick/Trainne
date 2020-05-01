@@ -18,6 +18,40 @@ $(function(){
         ]
     });
 
+    $('.post-slider').slick({
+        infinite: true,
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        nextArrow: '<img class="post-slider__arrows right" src="img/right.svg"></img>',
+        prevArrow: '<img class="post-slider__arrows left" src="img/left.svg"></img>',
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1110,
+                settings: {
+                    slidesToShow: 2, 
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 1, 
+                }
+            }
+        ]
+    });
+
+    
+    $('.post-slider__inner-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+    });
 
     $('.header__burger').click( function(event) {
         $('.header__burger,.menu').toggleClass('active');
